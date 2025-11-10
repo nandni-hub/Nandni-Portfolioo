@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandni - Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-sprinkles"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Nandni</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li> <!-- ✅ Added -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero-center">
+            <div class="hero-content">
+                <h2>Hello, I'm <span class="name-highlight">Nandni</span></h2>
+                <p>I build modern and intuitive web applications with clean UI and scalable backend logic. Currently pursuing MCA at Lovely Professional University, specializing in Full Stack Development with MERN & PHP.</p>
+                <a href="#portfolio" class="cta-button">See My Work</a>
+                <a href="resume.pdf" class="cta-button" target="_blank">Download CV</a>
+            </div>
+            <div class="hero-image">
+                <img src="nandni2.jpg" alt="Nandni's Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about reveal">
+        <div class="container">
+            <h3>About Me</h3>
+            <p>Hello! I'm <strong>Nandni</strong>, a dedicated and enthusiastic Full Stack Developer with a strong interest in building dynamic, user-friendly, and visually appealing web applications. I enjoy turning ideas into real, functional digital products.</p>
+
+        <p>Currently, I am pursuing my <strong>MCA from Lovely Professional University</strong>, where I am strengthening my technical foundation while working on real projects involving MERN Stack, PHP, and database systems. My previous academic background in Computer Science has helped me develop strong analytical and logical problem-solving skills.</p>
+
+        <p>I am passionate about learning new technologies, improving user experiences, and writing clean, efficient code. I enjoy collaborating with teams, adapting to new challenges, and continuously leveling up my skills.</p>
+
+        <p>I am actively seeking opportunities such as internships, freelance work, and full-time positions where I can contribute, grow, and bring value to innovative development teams.</p>
+    </section>
+
+    <section id="skills" class="skills reveal">
+        <div class="container">
+            <h3>Skills & Technologies</h3>
+            <div class="skills-grid">
+                <span>MERN Stack</span>
+                <span>HTML, CSS, JavaScript</span>
+                <span>PHP • Python • C++</span>
+                <span>MySQL • Oracle • MongoDB</span>
+                <span>REST APIs</span>
+                <span>Responsive UI / UX</span>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- ✅ CERTIFICATES SECTION ADDED -->
+    <section id="certificates" class="certificates reveal">
+        <div class="container">
+            <h3>Certificates & Achievements</h3>
+
+            <div class="certificate-grid">
+                <div class="certificate-card">
+                    <h4>MERN Stack Development</h4>
+                    <p>Issued by: Techcadd jalandhar</p>
+                    <a href="techcadd.pdf" target="_blank">View Certificate</a>
+                </div>
+
+                <div class="certificate-card">
+                    <h4>Hackathon</h4>
+                    <p>Issued by: LPU/EventEye/GeekforGeeks</p>
+                    <a href="12515648.pdf" target="_blank">View Certificate</a>
+                </div>
+
+              
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h3>Let's Connect</h3>
+            <p>If you are interested in working together or discussing an opportunity, feel free to reach out.</p>
+            <div class="contact-links">
+                <a href="mailto:snandni034@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nandni. Built with ❤️ and dedication.</p>
+    </footer>
+
+    <script>
+        // Fade-in on scroll effect
+        const reveals = document.querySelectorAll('.reveal');
+        window.addEventListener('scroll', () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) el.classList.add('show');
+            });
+        });
+    </script>
+</body>
+</html>
